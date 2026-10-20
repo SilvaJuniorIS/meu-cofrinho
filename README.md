@@ -2,26 +2,38 @@
 
 Protótipo mobile-first de um aplicativo familiar de tarefas, mesada e recompensas.
 
+## Perfil temporário de apresentação
+
+- Pai: Israel Junior
+- Mãe: Luciana Andreia
+- Eliza Maria: 12 anos
+- Isaías Miguel: 9 anos
+
+A tela de boas-vindas permite escolher a criança antes de entrar no app. Cada perfil tem tarefas, recompensas e progresso próprios. O mascote Faísca aparece na entrada e nas telas do app.
+
 ## Demonstração
 
-Abra `index.html` em um navegador moderno. Os dados ficam salvos no armazenamento local do navegador.
+Abra `index.html` em um navegador moderno ou use o GitHub Pages quando estiver habilitado. Os dados ficam salvos apenas no armazenamento local deste navegador.
 
-### Fluxo principal
-1. Na tela da criança, toque no círculo ao lado de uma tarefa.
-2. Alterne para **Modo responsável** no topo.
-3. Confirme ou revise a tarefa.
-4. Volte para **Modo criança** para ver o saldo, as estrelas e o progresso atualizados.
+### Fluxo da criança
+1. Na tela inicial, escolha Eliza ou Isaías e toque em **Entrar no app**.
+2. Toque no círculo ao lado de uma tarefa concluída. Ela passa a aguardar confirmação.
+3. Acompanhe tarefas, saldo demonstrativo, estrelas e prêmio.
 
-## Estrutura
-- `index.html`: protótipo navegável, responsivo e autocontido.
-- `manifest.json`: metadados iniciais para instalação como PWA.
-- `README.md`: visão geral e roteiro de demonstração.
+### Fluxo do responsável
+1. Toque em **Criança** no topo para abrir o modo responsável.
+2. Em **Para confirmar**, aprove ou devolva a tarefa para revisão.
+3. Use **Histórico** para ver confirmações e **Perfis e tarefas** para consultar as duas crianças.
+
+### Reset
+Use **Resetar** no topo ou **Família → Resetar o app e voltar ao início**. A ação pede confirmação e apaga o progresso temporário das duas crianças deste navegador.
 
 ## Limites desta versão
-É um protótipo para validação visual e de fluxo. Não há autenticação, sincronização entre dispositivos, notificações push ou persistência em nuvem. Os dados são fictícios e ficam neste navegador.
 
-## Próximos passos
-1. Validar com responsáveis e crianças.
-2. Refinar regras de tarefas, valores, estrelas e períodos de recompensa.
-3. Escolher stack mobile e backend para o MVP.
-4. Implementar autenticação familiar, sincronização e controles de privacidade.
+É um protótipo visual e interativo para apresentação e testes. Não há autenticação, sincronização entre dispositivos, notificações push ou pagamentos. Os perfis, tarefas, saldos e recompensas são dados de demonstração, armazenados localmente.
+
+## Estrutura
+
+- `index.html`: protótipo navegável, responsivo e autocontido, com o mascote incorporado.
+- `manifest.json`: metadados iniciais para instalação como PWA.
+- `README.md`: visão geral e roteiro de demonstração.
